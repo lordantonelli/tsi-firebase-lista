@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154915927301",
+    "project_id": "tsi---lista-de-contatos",
+    "storage_bucket": "tsi---lista-de-contatos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154915927301:android:aaefd44aad29b32768f36c",
+        "android_client_info": {
+          "package_name": "com.example.tsi.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154915927301-tgo1v2p1he0e9gcldf3jgliccai90f7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM8RZ81w0N1Y1cyAVjXNzRKPD2JcSbHUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154915927301-tgo1v2p1he0e9gcldf3jgliccai90f7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
