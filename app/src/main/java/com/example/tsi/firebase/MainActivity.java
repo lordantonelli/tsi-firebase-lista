@@ -38,18 +38,11 @@ public class MainActivity extends AppCompatActivity {
         listaPessoas = findViewById(R.id.listaPessoas);
         // Criando e associando o escutador de cliques do botão "adicionar":
         btnAdicionar.setOnClickListener(new EscutadorBotaoAdicionar());
-        // Referência para o nó principal deste exemplo:
-        DatabaseReference dbContatos = BD.child("contatos");
-        // Criando objeto com parâmetros para o adapter:
-        FirebaseListOptions<Contato> options = new FirebaseListOptions.Builder<Contato>()
-                .setLayout(R.layout.item_lista)
-                .setQuery(dbContatos, Contato.class)
-                .setLifecycleOwner(this)
-                .build();
-        // Criando o objeto adapter (usando os parâmetros criados acima):
-        adapter = new ContatosAdapter(options);
-        // Colocando o adapter no ListView:
-        listaPessoas.setAdapter(adapter);
+
+        /* ---------> Código AQUI <--------- */
+
+        /* --------------------------------- */
+
         // Criando e associando o escutador de cliques na lista:
         listaPessoas.setOnItemClickListener(new EscutadorCliqueLista());
     }
@@ -58,27 +51,9 @@ public class MainActivity extends AppCompatActivity {
     private class EscutadorBotaoAdicionar implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            // Variáveis auxiliares:
-            String nome, email;
-            // Referência para o nó principal deste exemplo:
-            DatabaseReference dbContatos = BD.child("contatos");
-            // Pegando os dados digitados nas caixas.
-            nome = txtNome.getText().toString();
-            email = txtEmail.getText().toString();
-            // Criando o objeto Contato, com os dados acima:
-            Contato c = new Contato(nome, email);
-            // Gerando um nó aleatório, que será utilizado como "chave" para
-            // os dados deste usuário (como se fosse a "chave" do registro na tabela.
-            // OBS:  - método push() :   gera o valor aleatório.
-            //       - método getKey() : devolve o valor gerado, pra podermos usar.
-            String chave = dbContatos.push().getKey();
-            // Enfim, gravando os dados deste usuário "debaixo" deste nó gerado:
-            dbContatos.child(chave).setValue(c);
-            // Limpando as caixas, para próxima digitação:
-            txtNome.setText("");
-            txtEmail.setText("");
-            // Colocando o cursor (o foco) de volta na caixa nome:
-            txtNome.requestFocus();
+            /* ---------> Código AQUI <--------- */
+
+            /* --------------------------------- */
         }
     }
 
